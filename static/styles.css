@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    line-height: 1.5em;
+}
+.sign:hover{
+    transition: .3s ease-in-out;
+    background-color: hsl(0, 0%, 41%);
+    color: #fff;
+    border: 1px solid hsl(0, 0%, 41%);
+}
+.login:hover{
+    color: hsl(0, 0%, 41%);
+    transition: .3s ease-in-out;
+
+}
+.sign{
+    box-shadow: 1px 1px 2px ;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    text-align: left;
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+}
+a{
+    color: hsl(0, 0%, 8%);
+    transition: .3s ease-in-out;
+}
+.img{
+    max-width: 100%;
+    max-height: 100%;
+}
+body{
+    font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    height: 100vh;
+}
+.container{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 90%;
+    padding: 5vh 0;
+
+    
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+
+}
+.links li:hover .arrow{
+    transition: .3s ease;
+    transform: rotate(180deg);
+}
+.nav_links{
+    display: flex;
+}
+.links a:hover{
+    color: hsl(0, 0%, 41%);
+}
+.logo{
+    flex: .2;
+    
+}
+.signup{
+    flex: .5;
+}
+.links li{
+    padding: 0 2vw;
+    position: relative;
+}
+.inner_links {
+    margin-left: -5vw;
+    padding: 2vh 0vw;
+    display: none;
+    background-color: #fff;
+    z-index: 3;
+}
+.inner_links li{
+    padding: .7vh 0.3vw ;
+
+
+}
+.inner_links img{
+    padding-right: 1vw;
+}
+.links li:hover .inner_links{
+    margin-top: 2vh;
+    display: block;
+    background-color: #fff;
+    box-shadow:  2px 2px 3px rgba(27, 26, 26, 0.589);
+    border-radius: .5rem;
+    text-align: center;
+    width: 12vw;
+    animation: rotation .4s linear;
+    position: absolute;
+}
+
+.signup button{
+    padding: 1vh 2vw;
+    border-radius: .5rem;
+    border: 1px solid hsl(0, 0%, 8%);
+    background: transparent;
+    cursor: pointer;
+}
+.signup .login{
+    
+    border: none;
+}
+.burger{
+display: none;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: hsl(0, 0%, 8%);
+    margin: 5px;
+}
+button:hover{
+    opacity: .9;
+}
+.hero_image img{
+    max-width: 100%;
+
+}
+
+.hero_content .container{
+    width: 100%;
+    margin: 0 auto;
+
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    flex: 2;
+    
+}
+.hero_image{
+    flex: 2;
+}
+.welcomer{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin: 0 3vw;
+
+}
+
+.welcomer button{
+    padding: 1.5vh 5vw;
+    background-color: hsl(0, 0%, 8%);
+    color: #fff;
+    border: 1px solid hsl(0, 0%, 8%);
+    border-radius: .5rem;
+    transition: .3s ease-in-out;
+    box-shadow: 2px 2px 2px hsl(0, 0%, 41%);
+
+}
+.welcomer button:hover{
+    background: transparent;
+    color: hsl(0, 0%, 8%);
+}
+.welcomer h2{
+    font-size: 4.5vw;
+    text-align: left;
+}
+
+.content,.hero_image{
+    margin: 0 5vw;
+}
+.navigation{
+    display: inline-flex;
+    width: 100%;
+}
+.navigation a {
+  
+    padding:0vh 1vw ;
+}
+@keyframes rotation{
+    from{
+        transform: rotate(270deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (max-width:768px){
+.container{
+    justify-content: space-between;
+    position: relative;
+    
+}
+.links,.signup,.nav_links{
+    display: flex;
+    flex-direction: column;
+
+
+
+    
+}
+.links{
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    height: 100vh;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-150%);
+    gap: 0;
+    animation: fade 1s linear;
+    left: 0;
+}
+.links li:hover .inner_links{
+    position: relative;
+    box-shadow: none;
+    width: 100%;
+}
+.nav_links{
+    padding: 10vh 0;
+    flex: 1;
+    
+}
+.signup{
+    flex: 1;
+
+}
+.nav_links li{
+
+    padding: 2vh 0;
+}
+
+.signup button{
+    /* width: 100%; */
+    padding: 1.5vh 12vw;
+    border: 1px solid hsl(0, 0%, 41%);
+    
+}
+.burger{
+    display: block;
+}
+
+.hero_content{
+    padding: 0;
+}
+.hero_content .container{
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+.welcomer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2vh ;
+    margin-top: 5vh;
+    margin-left: 0;
+    margin-right: 0;
+
+
+}
+
+li,li a{
+    color: hsl(0, 0%, 41%);
+}
+
+.container{
+    padding: 2vh;
+}
+.welcomer h2{
+    font-size: 8vw;
+    text-align: center;
+    max-width: 100%;
+
+}
+
+p{
+    text-align: center;
+}
+
+.links.open-nav{
+    transition: .4s ease-in-out;
+    transform: translateX(0%);
+    z-index: 3;
+    box-shadow: 0px 0px 5px #fff;
+    
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+opacity: 0;
+}
+.toggle .line3{
+transform: rotate(45deg) translate(-5px,-6px);
+}
+
+}
+@keyframes fade{
+    from{
+        transform: translateX(-100%);
+        opacity: .8;
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
