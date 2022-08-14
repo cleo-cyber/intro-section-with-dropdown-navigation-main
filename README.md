@@ -20,8 +20,8 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 
 ### Links
 
--  [Solution](https://your-solution-url.com)
--  [Live site](https://your-live-site-url.com)
+-  [Solution](https://github.com/cleo-cyber/intro-section-with-dropdown-navigation-main/tree/master)
+-  [Live site](https://cleo-cyber.github.io/intro-section-with-dropdown-navigation-main/)
 
 ### Built with
 
